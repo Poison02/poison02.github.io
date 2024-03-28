@@ -320,6 +320,20 @@ const sidebars: SidebarsConfig = {
     'tools/vite-plugin',
     'tools/jetbrains-product-activation-method',
   ],
+  record: [
+    'record/introduction',
+    {
+      label: '在线教育系统',
+      type: 'category',
+      link: {
+        type: 'doc',
+        id: 'record/online-education-system/online-edu-system-guide'
+      },
+      items: [
+        'record/online-education-system/online-edu-system-env',
+      ],
+    }
+  ]
 }
 
 module.exports = sidebars

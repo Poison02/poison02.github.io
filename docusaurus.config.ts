@@ -19,7 +19,7 @@ const config: Config = {
   customFields: {
     bio: '道阻且长，行则将至',
     description:
-      '是一个由愧怍创建的个人博客，主要分享编程开发知识和项目，该网站基于 React 驱动的静态网站生成器 Docusaurus 构建。',
+      '使用别的大佬模板创建的站点，用于记录学习，该网站基于 React 驱动的静态网站生成器 Docusaurus 构建。',
   },
   themeConfig: {
     // announcementBar: {
@@ -29,15 +29,15 @@ const config: Config = {
     metadata: [
       {
         name: 'keywords',
-        content: '愧怍, kuizuo',
+        content: 'Poison02',
       },
       {
         name: 'keywords',
-        content: 'blog, javascript, typescript, node, react, vue, web',
+        content: 'java, SpringBoot, React',
       },
       {
         name: 'keywords',
-        content: '编程爱好者, Web开发者, 写过爬虫, 学过逆向, 现在主攻ts全栈',
+        content: 'web开发者，Java，React',
       },
     ],
     docs: {
@@ -47,7 +47,7 @@ const config: Config = {
     },
     navbar: {
       logo: {
-        alt: '愧怍',
+        alt: 'Poison02',
         src: 'img/logo.webp',
         srcDark: 'img/logo.webp',
       },
@@ -58,22 +58,37 @@ const config: Config = {
           position: 'right',
           to: 'blog',
         },
+        // {
+        //   label: '项目',
+        //   position: 'right',
+        //   to: 'project',
+        // },
         {
-          label: '项目',
+          label: '文档',
           position: 'right',
-          to: 'project',
+          to: 'docs/record',
         },
         {
-          label: '更多',
+          label: '归档',
           position: 'right',
-          items: [
-            { label: '归档', to: 'blog/archive' },
-            { label: '笔记', to: 'docs/skill' },
-            { label: '资源', to: 'resources' },
-            { label: '友链', to: 'friends' },
-            { label: '工具推荐', to: 'docs/tools' },
-          ],
+          to: '/blog/archive'
         },
+        {
+          label: '资源',
+          position: 'right',
+          to: 'resources'
+        },
+        // {
+        //   label: '更多',
+        //   position: 'right',
+        //   items: [
+        //     { label: '归档', to: 'blog/archive' },
+        //     { label: '笔记', to: 'docs/skill' },
+        //     { label: '资源', to: 'resources' },
+        //     { label: '友链', to: 'friends' },
+        //     { label: '工具推荐', to: 'docs/tools' },
+        //   ],
+        // },
         {
           type: 'localeDropdown',
           position: 'right',
@@ -97,10 +112,10 @@ const config: Config = {
           title: '社交媒体',
           items: [
             { label: '关于我', to: '/about' },
-            { label: 'GitHub', href: social.github.href },
-            { label: 'Twitter', href: social.twitter.href },
-            { label: '掘金', href: social.juejin.href },
-            { label: 'Discord', href: social.discord.href },
+            // { label: 'GitHub', href: social.github.href },
+            // { label: 'Twitter', href: social.twitter.href },
+            // { label: '掘金', href: social.juejin.href },
+            // { label: 'Discord', href: social.discord.href },
           ],
         },
         {
@@ -127,9 +142,9 @@ const config: Config = {
         `,
     },
     algolia: {
-      appId: 'GV6YN1ODMO',
-      apiKey: '50303937b0e4630bec4a20a14e3b7872',
-      indexName: 'kuizuo',
+      appId: 'UR2HC0IYO3',
+      apiKey: 'a474c3021959496dc62d7bdd5f756926',
+      indexName: 'poison02',
     },
     prism: {
       theme: themes.oneLight,
@@ -159,11 +174,11 @@ const config: Config = {
       ],
     },
     giscus: {
-      repo: 'kuizuo/blog',
-      repoId: 'MDEwOlJlcG9zaXRvcnkzOTc2MjU2MTI=',
-      category: 'General',
-      categoryId: 'DIC_kwDOF7NJDM4CPK95',
-      theme: 'light',
+      repo: 'poison02/poison02.github.io',
+      repoId: 'R_kgDOLmgSJA',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOLmgSJM4CeSqL',
+      theme: 'preferred_color_scheme',
       darkTheme: 'dark_dimmed',
     } satisfies Partial<GiscusConfig>,
     tableOfContents: {
@@ -206,7 +221,6 @@ const config: Config = {
     'docusaurus-plugin-image-zoom',
     'docusaurus-plugin-sass',
     '@docusaurus/plugin-ideal-image',
-    ['docusaurus-plugin-baidu-tongji', { token: 'c9a3849aa75f9c4a4e65f846cd1a5155' }],
     [
       '@docusaurus/plugin-pwa',
       {
@@ -224,7 +238,7 @@ const config: Config = {
       {
         path: 'blog',
         editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
-          `https://github.com/kuizuo/blog/edit/main/${blogDirPath}/${blogPath}`,
+          `https://github.com/poison02/poison02.github.io/edit/main/${blogDirPath}/${blogPath}`,
         editLocalizedFiles: false,
         blogDescription: '代码人生：编织技术与生活的博客之旅',
         blogSidebarCount: 10,
@@ -235,8 +249,8 @@ const config: Config = {
           defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
         feedOptions: {
           type: 'all',
-          title: '愧怍',
-          copyright: `Copyright © ${new Date().getFullYear()} 愧怍 Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/" class="footer_lin">${beian}</a></p>`,
+          title: 'Poison02',
+          copyright: `Copyright © ${new Date().getFullYear()} Poison02 Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/" class="footer_lin">${beian}</a></p>`,
         },
       },
     ],
@@ -246,7 +260,7 @@ const config: Config = {
       tagName: 'meta',
       attributes: {
         name: 'description',
-        content: '愧怍的个人博客',
+        content: 'Poison02站点',
       },
     },
   ],

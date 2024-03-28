@@ -1,3 +1,11 @@
+/*
+ * @Author: Poison02 2069820192@qq.com
+ * @Date: 2024-03-27 21:41:48
+ * @LastEditors: Poison02 2069820192@qq.com
+ * @LastEditTime: 2024-03-28 18:56:36
+ * @FilePath: /blog/data/social.ts
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 export type Social = {
   github?: string
   twitter?: string
@@ -18,15 +26,15 @@ type SocialValue = {
 }
 
 const social: Social = {
-  github: 'https://github.com/kuizuo',
-  twitter: 'https://twitter.com/kuizuo',
-  juejin: 'https://juejin.cn/user/1565318510545901',
-  qq: 'https://img.kuizuo.cn/qq.png',
-  wx: 'https://img.kuizuo.cn/wechat.png',
+  github: 'https://github.com/Poison02',
+  // twitter: 'https://twitter.com/poison02',
+  juejin: 'https://juejin.cn/user/990013345505991',
+  // qq: 'https://img.kuizuo.cn/qq.png',
+  // wx: 'https://img.kuizuo.cn/wechat.png',
   // zhihu: 'https://www.zhihu.com/people/kuizuo',
   // cloudmusic: 'https://music.163.com/#/user/home?id=1333010742',
-  email: 'mailto:hi@kuizuo.cn',
-  discord: 'https://discord.gg/M8cVcjDxkz',
+  email: 'mailto:2069820192@qq.com',
+  // discord: 'https://discord.gg/M8cVcjDxkz',
 }
 
 const socialSet: Record<keyof Social | 'rss', SocialValue> = {
