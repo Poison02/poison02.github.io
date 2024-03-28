@@ -8,12 +8,14 @@ const beian = '闽ICP备2020017848号-2'
 const beian1 = '闽公网安备35021102000847号'
 
 const config: Config = {
-  title: '愧怍的小站',
-  url: 'https://kuizuo.cn',
+  title: 'Poison02',
+  url: 'https://poison02.github.io/',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'kuizuo',
-  projectName: 'blog',
+  organizationName: 'poison02',
+  projectName: 'poison02.github.io',
+  deploymentBranch: 'gh-pages',
+  trailingSlash: false,
   customFields: {
     bio: '道阻且长，行则将至',
     description:
