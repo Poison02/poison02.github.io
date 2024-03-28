@@ -2,20 +2,19 @@
   "name": "blog",
   "version": "3.0.0",
   "author": {
-    "url": "https://github.com/kuizuo",
-    "email": "hi@kuizuo.cn",
-    "name": "Kuizuo"
+    "url": "https://github.com/Poison02",
+    "email": "2069820192@qq.com",
+    "name": "Poison02"
   },
   "repository": {
-    "url": "https://github.com/kuizuo/blog",
+    "url": "https://github.com/Poison02/poison02.github.io",
     "type": "git"
   },
-  "homepage": "https://kuizuo.cn",
+  "homepage": "https://poison02.github.io",
   "license": "MIT",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "start:en": "docusaurus start --locale en",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
